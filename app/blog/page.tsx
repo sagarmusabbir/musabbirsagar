@@ -10,8 +10,8 @@ import {
 
 export default function BlogPage() {
   return (
-    <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
-      <div className="mx-auto max-w-screen-sm text-center mb-8 lg:mb-16">
+    <section className="space-y-8 mx-auto">
+      <div>
         <h1 className={title()}>Blog</h1>
       </div>
       <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
@@ -76,6 +76,6 @@ export default function BlogPage() {
           </CardBody>
         </Card>
       </div>
-    </div>
+    </section>
   );
 }
