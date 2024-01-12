@@ -1,4 +1,5 @@
 import { title } from "@/components/primitives";
+import React from "react";
 import {
   Card,
   CardHeader,
@@ -14,6 +15,51 @@ export default function BlogPage() {
         <h1 className={title()}>Blog</h1>
       </div>
       <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        <Card className="py-4">
+          <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
+            <p className="text-tiny uppercase font-bold">Daily Mix</p>
+            <small className="text-default-500">12 Tracks</small>
+            <h4 className="font-bold text-large">Frontend Radio</h4>
+          </CardHeader>
+          <CardBody className="overflow-visible py-2">
+            <Image
+              alt="Card background"
+              className="object-cover rounded-xl"
+              src="/images/hero-card-complete.jpeg"
+              width={270}
+            />
+          </CardBody>
+        </Card>
+        <Card className="py-4">
+          <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
+            <p className="text-tiny uppercase font-bold">Daily Mix</p>
+            <small className="text-default-500">12 Tracks</small>
+            <h4 className="font-bold text-large">Frontend Radio</h4>
+          </CardHeader>
+          <CardBody className="overflow-visible py-2">
+            <Image
+              alt="Card background"
+              className="object-cover rounded-xl"
+              src="/images/hero-card-complete.jpeg"
+              width={270}
+            />
+          </CardBody>
+        </Card>
+        <Card className="py-4">
+          <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
+            <p className="text-tiny uppercase font-bold">Daily Mix</p>
+            <small className="text-default-500">12 Tracks</small>
+            <h4 className="font-bold text-large">Frontend Radio</h4>
+          </CardHeader>
+          <CardBody className="overflow-visible py-2">
+            <Image
+              alt="Card background"
+              className="object-cover rounded-xl"
+              src="/images/hero-card-complete.jpeg"
+              width={270}
+            />
+          </CardBody>
+        </Card>
         <Card className="py-4">
           <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
             <p className="text-tiny uppercase font-bold">Daily Mix</p>
