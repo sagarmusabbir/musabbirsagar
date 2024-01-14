@@ -62,7 +62,7 @@ export const Navbar = () => {
         <NavbarBrand as="li" className="gap-3 max-w-fit">
           <NextLink className="flex justify-start items-center gap-1" href="/">
             <Button radius="md" variant="flat" size="md">
-              MS
+              MUSABBIR
             </Button>
           </NextLink>
         </NavbarBrand>

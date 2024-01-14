@@ -67,7 +67,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="flex gap-3 mt-8">
+      <div className="flex gap-3 mt-8 lg:mt-16">
         <Link
           isExternal
           href={siteConfig.links.docs}
@@ -89,14 +89,14 @@ export default function Home() {
         </Link>
       </div>
 
-      <div className="mt-8">
+      <div className="mt-8 lg:mt-16">
         <Card>
           <CardBody>
             <p>Make beautiful websites regardless of your design experience.</p>
           </CardBody>
         </Card>
       </div>
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
+      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left mt-8 lg:mt-16">
         <a
           href="./blog"
           className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
