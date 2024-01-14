@@ -6,6 +6,18 @@ import { siteConfig } from "@/config/site";
 import { title, subtitle } from "@/components/primitives";
 import { GithubIcon } from "@/components/icons";
 import { Kbd } from "@nextui-org/kbd";
+// import { MailIcon } from "@/components/icons.jsx";
+// import { LockIcon } from "@/components/icons.jsx";
+import {
+  Modal,
+  ModalContent,
+  ModalHeader,
+  ModalBody,
+  ModalFooter,
+  useDisclosure,
+  Checkbox,
+  Input,
+} from "@nextui-org/react";
 // import React from "react";
 // import {Divider} from "@nextui-org/react";
 import { Card, CardHeader, CardBody, CardFooter } from "@nextui-org/card";
@@ -19,7 +31,6 @@ export default function Home() {
         <h1
           className={title({
             class: "pb-1",
-            color: "myslatetext",
           })}
         >
           Musabbir&nbsp;
@@ -51,15 +62,15 @@ export default function Home() {
           <Kbd keys={["enter"]} className="p-1 text-base  mt-2 font-light ">
             Digital Nomad
           </Kbd> */}
-          <Chip color="success" variant="dot" radius="sm" className="ml-2">
+          <Chip variant="flat" radius="sm" className="ml-2">
             {" "}
             Full Stack Developer
           </Chip>
-          <Chip color="success" variant="dot" radius="sm" className="ml-2">
+          <Chip variant="flat" radius="sm" className="ml-2">
             {" "}
             Enterproneuour
           </Chip>
-          <Chip color="success" variant="dot" radius="sm" className="ml-2">
+          <Chip variant="flat" radius="sm" className="ml-2">
             {" "}
             Digital Nomad
           </Chip>
@@ -69,7 +80,6 @@ export default function Home() {
 
       <div className="flex gap-3 mt-8 lg:mt-16">
         <Link
-          isExternal
           href={siteConfig.links.docs}
           className={buttonStyles({
             color: "default",
@@ -77,8 +87,9 @@ export default function Home() {
             variant: "ghost",
           })}
         >
-          Documentation
+          Say Hi!
         </Link>
+
         <Link
           isExternal
           className={buttonStyles({ variant: "bordered", radius: "sm" })}

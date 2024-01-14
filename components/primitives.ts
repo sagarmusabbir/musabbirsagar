@@ -14,7 +14,7 @@ export const title = tv({
       mygreentext:
         "bg-gradient-to-r from-[#22c55e] via-[#10b981] to-[#14b8a6] inline-block text-transparent bg-clip-text",
       mytealtext:
-        "bg-gradient-to-r from-[#14b8a6] via-[#10b981] to-[#22c55e] inline-block text-transparent bg-clip-text",
+        "bg-gradient-to-r from-[#2dd4bf] via-[#34d399] to-[#4ade80] inline-block text-transparent bg-clip-text",
       myslatetext:
         "bg-gradient-to-r from-[#94a3b8] via-[#9ca3af] to-[#a1a1aa] inline-block text-transparent bg-clip-text",
       mygreenbg: "bg-gradient-to-r from-[#22c55e] via-[#10b981] to-[#14b8a6]",
