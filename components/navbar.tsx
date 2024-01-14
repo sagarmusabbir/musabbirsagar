@@ -28,6 +28,7 @@ import {
 } from "@/components/icons";
 
 import { Logo } from "@/components/icons";
+import { Avatar, Chip } from "@nextui-org/react";
 
 export const Navbar = () => {
   const searchInput = (
@@ -51,13 +52,18 @@ export const Navbar = () => {
     />
   );
 
+  function togleMenu(): void {
+    throw new Error("Function not implemented.");
+  }
+
   return (
     <NextUINavbar maxWidth="xl" position="sticky">
       <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
         <NavbarBrand as="li" className="gap-3 max-w-fit">
           <NextLink className="flex justify-start items-center gap-1" href="/">
-            {/* <Logo /> */}
-            <p className="font-bold text-inherit">MUSABBIR SAGAR</p>
+            <Button radius="md" variant="flat" size="md">
+              MS
+            </Button>
           </NextLink>
         </NavbarBrand>
         <ul className="hidden lg:flex gap-4 justify-start ml-2">
@@ -99,19 +105,13 @@ export const Navbar = () => {
           <Button
             isExternal
             as={Link}
-            className="text-sm font-normal text-default-600 bg-default-100"
             href={siteConfig.links.upwork}
-            endContent={
-              <Kbd
-                className="hidden lg:inline-block text-[#45D483]"
-                keys={["shift"]}
-              >
-                Upwork
-              </Kbd>
-            }
-            variant="flat"
+            showAnchorIcon
+            variant="ghost"
+            color="success"
+            size="md"
           >
-            Hire @
+            @Upwork
           </Button>
         </NavbarItem>
       </NavbarContent>
@@ -137,7 +137,7 @@ export const Navbar = () => {
                     ? "success"
                     : "foreground"
                 }
-                href="#"
+                href={item.href}
                 size="lg"
               >
                 {item.label}

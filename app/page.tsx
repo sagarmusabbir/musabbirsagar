@@ -10,7 +10,7 @@ import { Kbd } from "@nextui-org/kbd";
 // import {Divider} from "@nextui-org/react";
 import { Card, CardHeader, CardBody, CardFooter } from "@nextui-org/card";
 
-import { Button } from "@nextui-org/react";
+import { Button, Chip } from "@nextui-org/react";
 
 export default function Home() {
   return (
@@ -18,23 +18,29 @@ export default function Home() {
       <div className="inline-block max-w-lg text-center justify-center">
         <h1
           className={title({
-            color: "green",
-            class:
-              "bg-gradient-to-r from-green-600 via-emereld-500 to-teal-400 inline-block text-transparent bg-clip-text",
+            class: "pb-1",
+            color: "myslatetext",
           })}
         >
           Musabbir&nbsp;
         </h1>
-        <h1 className={title()}>Sagar&nbsp;</h1>
-        <br />
-        {/* <h1 className={title()}>
+        <h1
+          className={title({
+            class: "pb-1",
+            color: "mytealtext",
+          })}
+        >
+          Sagar&nbsp;
+        </h1>
+        <div className="flex flex-wrap items-center justify-center gap-1 mt-2">
+          {/* <h1 className={title()}>
           websites regardless of your design experience.
         </h1> */}
-        {/* <h2 className={subtitle({ class: "mt-4" })}>
+          {/* <h2 className={subtitle({ class: "mt-4" })}>
           Full Stack Developer | Enterproneuour | Digital Nomad
         </h2> */}
-        <h2 className={subtitle({ class: "mt-4 text-lg" })}>
-          <Kbd keys={["command"]} className="p-1 text-base mt-2 font-light ">
+          {/* <h2 className={subtitle({ class: "mt-4 text-lg" })}> */}
+          {/* <Kbd keys={["command"]} className="p-1 text-base mt-2 font-light ">
             Full Stack Developer
           </Kbd>
           &nbsp;
@@ -44,11 +50,24 @@ export default function Home() {
           &nbsp;
           <Kbd keys={["enter"]} className="p-1 text-base  mt-2 font-light ">
             Digital Nomad
-          </Kbd>
-        </h2>
+          </Kbd> */}
+          <Chip color="success" variant="dot" radius="sm" className="ml-2">
+            {" "}
+            Full Stack Developer
+          </Chip>
+          <Chip color="success" variant="dot" radius="sm" className="ml-2">
+            {" "}
+            Enterproneuour
+          </Chip>
+          <Chip color="success" variant="dot" radius="sm" className="ml-2">
+            {" "}
+            Digital Nomad
+          </Chip>
+          {/* </h2> */}
+        </div>
       </div>
 
-      <div className="flex gap-3">
+      <div className="flex gap-3 mt-8">
         <Link
           isExternal
           href={siteConfig.links.docs}
