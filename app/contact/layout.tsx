@@ -1,13 +1,17 @@
-export default function BlogLayout({
+import { Navbar } from "@/components/navbar";
+export default function ContactLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
   return (
-    <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
-      <div className="inline-block max-w-screen-xl text-center justify-center">
-        {children}
-      </div>
-    </section>
+    <>
+      <Navbar />
+      <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
+        <div className="inline-block max-w-screen-xl text-center justify-center">
+          {children}
+        </div>
+      </section>
+    </>
   );
 }

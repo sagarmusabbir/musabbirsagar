@@ -10,6 +10,8 @@ import {
   Divider,
   Link,
   Kbd,
+  Breadcrumbs,
+  BreadcrumbItem,
 } from "@nextui-org/react";
 
 export default function BlogPage() {

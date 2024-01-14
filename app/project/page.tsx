@@ -11,7 +11,7 @@ import {
   Link,
 } from "@nextui-org/react";
 
-export default function ProjectsPage() {
+export default function ProjectPage() {
   return (
     <section className="space-y-8 mx-auto">
       <div>
