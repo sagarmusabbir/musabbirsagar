@@ -1,4 +1,3 @@
-import Menu from "@/components/naav";
 import { Navbar } from "@/components/navbar";
 
 export default function BlogLayout({
