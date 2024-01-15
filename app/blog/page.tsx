@@ -12,15 +12,17 @@ import {
   Kbd,
   Breadcrumbs,
   BreadcrumbItem,
+  Navbar,
 } from "@nextui-org/react";
 
 export default function BlogPage() {
   return (
-    <section className="space-y-8 mx-auto">
+    <section>
       <div>
         <h1 className={title()}>Blog </h1>
       </div>
-      <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-2">
+
+      <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-2 mt-8">
         <Link href="#">
           <Card className="max-w-[400px]">
             <CardHeader className="flex gap-3">

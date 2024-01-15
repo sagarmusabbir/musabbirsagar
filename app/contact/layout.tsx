@@ -7,11 +7,10 @@ export default function ContactLayout({
   return (
     <>
       <Navbar />
-      <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
-        <div className="inline-block max-w-screen-xl text-center justify-center">
-          {children}
-        </div>
-      </section>
+
+      <div className=" flex flex-colcontainer mx-auto  max-w-screen-xl pt-8 px-6 flex-grow text-center  items-center justify-center gap-4">
+        {children}
+      </div>
     </>
   );
 }

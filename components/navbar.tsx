@@ -61,8 +61,8 @@ export const Navbar = () => {
       <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
         <NavbarBrand as="li" className="gap-3 max-w-fit">
           <NextLink className="flex justify-start items-center gap-1" href="/">
-            <Button radius="md" variant="flat" size="md">
-              MUSABBIR
+            <Button radius="md" variant="ghost" size="md">
+              MS
             </Button>
           </NextLink>
         </NavbarBrand>
@@ -107,7 +107,7 @@ export const Navbar = () => {
             as={Link}
             href={siteConfig.links.upwork}
             showAnchorIcon
-            variant="ghost"
+            variant="faded"
             color="success"
             size="md"
           >
