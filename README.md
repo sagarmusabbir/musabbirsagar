@@ -17,7 +17,7 @@ This is a template for creating applications using Next.js 13 (app directory) an
 
 ### Clone this repo with git clone
 
-To clobe this repo based on this template using `git clone`, run the following command:
+To clone this repo based on using `git clone`, run the following command:
 
 ```bash
 git clone https://github.com/sagarmusabbir/musabbirsagar.git
