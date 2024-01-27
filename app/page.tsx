@@ -37,15 +37,15 @@ import { ThemeSwitch } from "@/components/theme-switch";
 export default function Home() {
   return (
     <section className="flex flex-col items-center justify-center gap-6 lg:gap-24 py-8 mt-16 md:py-10 ">
-      <div className="flex flex-row justify-center gap-2">
+      <div className="flex flex-row justify-center gap-2 items-center">
         <Link isExternal href={siteConfig.links.twitter} aria-label="Twitter">
-          <TwitterIcon className="text-default-500" />
+          <TwitterIcon className="text-slate-400 dark:text-slate-500" />
         </Link>
         <Link isExternal href={siteConfig.links.discord} aria-label="Discord">
-          <DiscordIcon className="text-default-500" />
+          <DiscordIcon className="text-slate-400 dark:text-slate-500" />
         </Link>
         <Link isExternal href={siteConfig.links.github} aria-label="Github">
-          <GithubIcon className="text-default-500" />
+          <GithubIcon className="text-slate-400 dark:text-slate-500" />
         </Link>
         <ThemeSwitch />
       </div>
@@ -75,46 +75,51 @@ export default function Home() {
           , a sleek and responsive Hugo theme.
         </Chip> */}
 
-        <div className="inline-block  max-w-lg text-center justify-center">
-          <h1 className={title()}>Musabbir&nbsp;</h1>
+        <div className="inline-block  max-w-lg text-center justify-center ">
+          {/* <h1 className={title()}>Musabbir&nbsp;</h1>
           <h1
             className={title({
               color: "green",
             })}
           >
             Sagar&nbsp;
+          </h1> */}
+          <h1 className="text-5xl font-bold text-slate-700 dark:text-slate-300">
+            Musabbir&nbsp;Sagar
           </h1>
         </div>
 
         <div className="flex flex-wrap gap-2 text-center justify-center">
-          <Chip variant="flat" radius="sm" size="md">
+          <Chip
+            variant="flat"
+            radius="sm"
+            size="md"
+            className="shadow-md backdrop-blur-md bg-slate-200/30 dark:bg-slate-700/30"
+          >
             {" "}
             Full Stack Developer
           </Chip>
-          <Chip variant="flat" radius="sm" size="md">
+          <Chip
+            variant="flat"
+            radius="sm"
+            size="md"
+            className="shadow-md backdrop-blur-md bg-slate-200/30 dark:bg-slate-700/30"
+          >
             {" "}
             Enterproneuour
           </Chip>
-          <Chip variant="flat" radius="sm" size="md">
+          <Chip
+            variant="flat"
+            radius="sm"
+            size="md"
+            className="shadow-md backdrop-blur-md bg-slate-200/30 dark:bg-slate-700/30"
+          >
             {" "}
             Digital Nomad
           </Chip>
         </div>
         <div className="flex gap-3">
-          <Link
-            href={siteConfig.links.upwork}
-            showAnchorIcon
-            isExternal
-            className={buttonStyles({
-              color: "success",
-              radius: "sm",
-              variant: "flat",
-            })}
-          >
-            Work With Me
-          </Link>
-
-          <Link
+          {/* <Link
             isExternal
             showAnchorIcon
             className={buttonStyles({
@@ -125,14 +130,59 @@ export default function Home() {
           >
             <GithubIcon size={20} />
             GitHub
-          </Link>
+          </Link> */}
+
+          {/* <Link
+            href={siteConfig.links.upwork}
+            showAnchorIcon
+            isExternal
+            className={buttonStyles({
+              radius: "sm",
+              variant: "ghost",
+              size: "md",
+            })}
+          >
+            Work With Me
+          </Link> */}
+
+          <Button
+            as={Link}
+            href={siteConfig.links.upwork}
+            showAnchorIcon
+            isExternal
+            radius="sm"
+            className="bg-transparent border border-slate-200 dark:border-slate-800 dark:hover:border-neon-slate hover:bg-neon-slate text-slate-700 hover:text-white dark:text-white shadow-lg backdrop-blur-md"
+          >
+            <GithubIcon size={20} />
+            GitHub
+          </Button>
+
+          <Button
+            as={Link}
+            href={siteConfig.links.upwork}
+            showAnchorIcon
+            isExternal
+            radius="sm"
+            className="bg-gradient-to-tr from-neon-gray to-neon-slate text-white shadow-lg backdrop-blur-md"
+          >
+            Work With Me
+          </Button>
+
+          {/* <Link>
+            <Button
+              radius="md"
+              className=" shadow-lg backdrop-blur-lg bg-white/30 dark:bg-gray/30"
+            >
+              Work With Me
+            </Button>
+          </Link> */}
         </div>
       </div>
 
-      <div className="grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
+      <div className="grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left text-slate-950 dark:text-white">
         <a
           href="./blog"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-slate-300 hover:bg-slate-100 hover:dark:border-slate-700 hover:dark:bg-slate-800/30"
           rel="noopener noreferrer"
         >
           <h2 className={`mb-3 text-2xl font-semibold`}>
@@ -142,12 +192,12 @@ export default function Home() {
             </span>
           </h2>
           <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            <Kbd>Warning</Kbd>: Expect randomness
+            Warning: Expect randomness
           </p>
         </a>
         <a
           href="./project"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-slate-300 hover:bg-slate-100 hover:dark:border-slate-700 hover:dark:bg-slate-800/30"
           rel="noopener noreferrer"
         >
           <h2 className={`mb-3 text-2xl font-semibold`}>
@@ -163,29 +213,19 @@ export default function Home() {
 
         <a
           href="./about"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-slate-300 hover:bg-slate-100 hover:dark:border-slate-700 hover:dark:bg-slate-800/30"
           rel="noopener noreferrer"
         >
           <h2 className={`mb-3 text-2xl font-semibold`}>
             About <span className="text-green-400"></span>-&gt;
           </h2>
           <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            {" "}
-            <Chip color="default" radius="sm" size="sm">
-              {" "}
-              CEO
-            </Chip>{" "}
-            by day,{" "}
-            <Chip color="default" radius="sm" size="sm">
-              {" "}
-              programmar
-            </Chip>{" "}
-            by night
+            CEO by day, programmar by night
           </p>
         </a>
         <a
           href="./contact"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-slate-300 hover:bg-slate-100 hover:dark:border-slate-700 hover:dark:bg-slate-800/30"
           rel="noopener noreferrer"
         >
           <h2 className={`mb-3 text-2xl font-semibold`}>
