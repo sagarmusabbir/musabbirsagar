@@ -1,46 +1,81 @@
-# Next.js Portfolio
+# React Awesome Reveal - Next.Js Agency
 
-This is a template for creating applications using Next.js 13 (app directory) and NextUI (v2).
+### Deploy Preview [![Netlify Status](https://api.netlify.com/api/v1/badges/04870de6-8da8-4746-b8d8-82d432fc1340/deploy-status)](https://app.netlify.com/sites/react-awesome-next/deploys)
 
-## Technologies Used
+[![Preview](https://cdn-icons-png.flaticon.com/512/2547/2547870.png)](https://react-awesome-next.netlify.app/)
 
-- [Next.js 13](https://nextjs.org/docs/getting-started)
-- [NextUI v2](https://nextui.org/)
-- [Tailwind CSS](https://tailwindcss.com/)
-- [Tailwind Variants](https://tailwind-variants.org)
-- [TypeScript](https://www.typescriptlang.org/)
-- [Framer Motion](https://www.framer.com/motion/)
-- [next-themes](https://github.com/pacocoursey/next-themes)
+### Built With
 
-## How to Use
+- [Next JS](https://nextjs.org/)
+- [Tailwindcss](https://tailwindcss.com/)
 
+## Description
 
-### Clone this repo with git clone
+A one-page website for business/agency. Design by <a href='https://www.figma.com/@zet_dev'>Dliya' Zarror Nibros</a>
 
-To clone this repo based on using `git clone`, run the following command:
+## Getting Started
 
-```bash
-git clone https://github.com/sagarmusabbir/musabbirsagar.git
+Create .env file in your root project folder.
+
 ```
-After that `cd` into the project directory by tunning:
-
-```bash
-cd musabbirsagar
+NEXT_PUBLIC_MAIN_URL=http://localhost:3000/
 ```
 
-
-### Install dependencies
-
-```bash
-npm install
-```
-
-### Run the development server
+### Depedencies
 
 ```bash
-npm run dev
+"@emotion/react": "^11.7.1",
+"next": "12.0.7",
+"react": "17.0.2",
+"react-awesome-reveal": "^3.8.1",
+"react-dom": "17.0.2"
 ```
 
-## License
+### Installing
 
-Licensed under the [MIT license](https://github.com/nextui-org/next-app-template/blob/main/LICENSE).
+1. Clone the repo and enter the directory
+
+```sh
+git clone https://github.com/sagarmusabbir/react-awesome-next.git
+cd react-awesome-next
+```
+
+2. Install NPM packages
+
+```sh
+npm install or yarn install
+```
+
+3. Run project
+
+```sh
+npm run dev or yarn dev
+```
+
+## Contact
+
+sagarmusabbir@gmail.com
+
+Project Link: [https://github.com/sagarmusabbir/react-awesome-next.git](https://github.com/sagarmusabbir/react-awesome-next.git)
+
+## Authors
+
+1. Musabbir Sagar [@myLinkedIn](https://www.linkedin.com/in/musabbirsagar/)
+
+## Version History
+
+<!-- - 0.2
+  - Various bug fixes and optimizations
+  - See [commit change]() or See [release history]() -->
+
+- 0.1
+  - Initial Release
+
+<!-- ## License
+
+This project is licensed under the [Name] License - see the LICENSE.md file for details -->
+
+## Acknowledgements
+
+- [react-awesome-reveal](https://www.npmjs.com/package/react-awesome-reveal)
+- [@emotion/react](https://www.npmjs.com/package/@emotion/react)

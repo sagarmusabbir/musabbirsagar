@@ -44,6 +44,6 @@ export const siteConfig = {
     twitter: "https://twitter.com/getnextui",
     docs: "https://nextui.org",
     discord: "https://discord.gg/9b6yyZKmH4",
-    upwork: "https://www.upwork.com/freelancers/~01395bf8f21fc23328",
+    upwork: "https://www.upwork.com/workwith/smamusabbirs",
   },
 };

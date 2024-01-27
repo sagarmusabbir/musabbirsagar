@@ -4,6 +4,7 @@ import { Code } from "@nextui-org/code";
 import { button as buttonStyles } from "@nextui-org/theme";
 import { siteConfig } from "@/config/site";
 import { title, subtitle } from "@/components/primitives";
+import { motion } from "framer-motion";
 import {
   DiscordIcon,
   GithubIcon,
@@ -24,6 +25,7 @@ import {
   useDisclosure,
   Checkbox,
   Input,
+  Avatar,
 } from "@nextui-org/react";
 // import React from "react";
 // import {Divider} from "@nextui-org/react";
@@ -34,7 +36,7 @@ import { ThemeSwitch } from "@/components/theme-switch";
 
 export default function Home() {
   return (
-    <section className="flex flex-col items-center justify-center gap-6 lg:gap-24 py-8 mt-16 md:py-10">
+    <section className="flex flex-col items-center justify-center gap-6 lg:gap-24 py-8 mt-16 md:py-10 ">
       <div className="flex flex-row justify-center gap-2">
         <Link isExternal href={siteConfig.links.twitter} aria-label="Twitter">
           <TwitterIcon className="text-default-500" />
@@ -49,7 +51,7 @@ export default function Home() {
       </div>
 
       <div className="flex flex-col space-y-3 items-center justify-center">
-        <Chip
+        {/* <Chip
           // startContent={
           //   // {<NotificationIcon size={16} />}
           //   <Chip size={"sm"} variant="light" color="success">
@@ -71,7 +73,8 @@ export default function Home() {
             &nbsp;Eventually
           </Link>
           , a sleek and responsive Hugo theme.
-        </Chip>
+        </Chip> */}
+
         <div className="inline-block  max-w-lg text-center justify-center">
           <h1 className={title()}>Musabbir&nbsp;</h1>
           <h1
@@ -84,15 +87,15 @@ export default function Home() {
         </div>
 
         <div className="flex flex-wrap gap-2 text-center justify-center">
-          <Chip variant="shadow" radius="sm" size="lg">
+          <Chip variant="flat" radius="sm" size="md">
             {" "}
             Full Stack Developer
           </Chip>
-          <Chip variant="shadow" radius="sm" size="lg">
+          <Chip variant="flat" radius="sm" size="md">
             {" "}
             Enterproneuour
           </Chip>
-          <Chip variant="shadow" radius="sm" size="lg">
+          <Chip variant="flat" radius="sm" size="md">
             {" "}
             Digital Nomad
           </Chip>
@@ -105,15 +108,19 @@ export default function Home() {
             className={buttonStyles({
               color: "success",
               radius: "sm",
-              variant: "faded",
+              variant: "flat",
             })}
           >
-            Hire Me
+            Work With Me
           </Link>
 
           <Link
             isExternal
-            className={buttonStyles({ variant: "bordered", radius: "sm" })}
+            showAnchorIcon
+            className={buttonStyles({
+              variant: "flat",
+              radius: "sm",
+            })}
             href={siteConfig.links.github}
           >
             <GithubIcon size={20} />
@@ -135,8 +142,7 @@ export default function Home() {
             </span>
           </h2>
           <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            <Kbd>Warning</Kbd>: Expect randomness, occasional wisdom, and a
-            distinct lack of seriousness.
+            <Kbd>Warning</Kbd>: Expect randomness
           </p>
         </a>
         <a
@@ -151,8 +157,7 @@ export default function Home() {
             </span>
           </h2>
           <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Think of it as a blend of projects, portfolio, and case studies
-            rolled into one!
+            Projects, portfolio, and case studies
           </p>
         </a>
 
@@ -166,11 +171,16 @@ export default function Home() {
           </h2>
           <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
             {" "}
-            <Chip color="default" radius="sm" size="md">
+            <Chip color="default" radius="sm" size="sm">
               {" "}
-              Founder of thirdbracket.co.uk
+              CEO
             </Chip>{" "}
-            by day, professional next.js developer @Upwork by night
+            by day,{" "}
+            <Chip color="default" radius="sm" size="sm">
+              {" "}
+              programmar
+            </Chip>{" "}
+            by night
           </p>
         </a>
         <a
@@ -182,8 +192,7 @@ export default function Home() {
             Contact <span className="text-green-400"></span>-&gt;
           </h2>
           <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Follow me on spcial media for daily updates. Ask me anything, i will
-            answer withing 24 hours.
+            Follow my digital footprints
           </p>
         </a>
       </div>

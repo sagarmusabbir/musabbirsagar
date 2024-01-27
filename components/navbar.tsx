@@ -107,11 +107,11 @@ export const Navbar = () => {
             as={Link}
             href={siteConfig.links.upwork}
             showAnchorIcon
-            variant="faded"
+            variant="flat"
             color="success"
             size="md"
           >
-            @Upwork
+            Work With Me
           </Button>
         </NavbarItem>
       </NavbarContent>
