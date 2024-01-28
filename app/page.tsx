@@ -181,12 +181,12 @@ export default function Home() {
 
       <div className="grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left text-slate-950 dark:text-white">
         <a
-          href="./blog"
+          href="https://blog.musabbirsagar.com/tag/articles/"
           className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-slate-300 hover:bg-slate-100 hover:dark:border-slate-700 hover:dark:bg-slate-800/30"
           rel="noopener noreferrer"
         >
           <h2 className={`mb-3 text-2xl font-semibold`}>
-            Blog{" "}
+            Articles{" "}
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
               -&gt;
             </span>
@@ -196,7 +196,7 @@ export default function Home() {
           </p>
         </a>
         <a
-          href="./project"
+          href="https://blog.musabbirsagar.com/tag/projects/"
           className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-slate-300 hover:bg-slate-100 hover:dark:border-slate-700 hover:dark:bg-slate-800/30"
           rel="noopener noreferrer"
         >
@@ -212,7 +212,7 @@ export default function Home() {
         </a>
 
         <a
-          href="./about"
+          href="https://blog.musabbirsagar.com/about"
           className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-slate-300 hover:bg-slate-100 hover:dark:border-slate-700 hover:dark:bg-slate-800/30"
           rel="noopener noreferrer"
         >
@@ -224,7 +224,7 @@ export default function Home() {
           </p>
         </a>
         <a
-          href="./contact"
+          href="https://wa.me/881765692886"
           className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-slate-300 hover:bg-slate-100 hover:dark:border-slate-700 hover:dark:bg-slate-800/30"
           rel="noopener noreferrer"
         >
@@ -232,7 +232,7 @@ export default function Home() {
             Contact <span className="text-green-400"></span>-&gt;
           </h2>
           <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Follow my digital footprints
+            Contact me straightway
           </p>
         </a>
       </div>
