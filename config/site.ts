@@ -5,13 +5,15 @@ export const siteConfig = {
   description: "A Nomad Developer",
   navItems: [
     {
-      label: "Projects",
-      href: "/project",
-    },
-    {
       label: "Blog",
-      href: "/blog",
+      href: "https://blog.musabbirsagar.com/",
     },
+
+    {
+      label: "Projects",
+      href: "https://github.com/sagarmusabbir?tab=projects",
+    },
+
     {
       label: "About",
       href: "/about",
@@ -23,13 +25,15 @@ export const siteConfig = {
   ],
   navMenuItems: [
     {
-      label: "Projects",
-      href: "/project",
-    },
-    {
       label: "Blog",
-      href: "/blog",
+      href: "https://blog.musabbirsagar.com/",
     },
+
+    {
+      label: "Projects",
+      href: "https://github.com/sagarmusabbir?tab=projects",
+    },
+
     {
       label: "About",
       href: "/about",

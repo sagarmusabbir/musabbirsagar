@@ -1,4 +1,4 @@
-import { Link } from "@nextui-org/link";
+import { Link, LinkIcon } from "@nextui-org/link";
 import { Snippet } from "@nextui-org/snippet";
 import { Code } from "@nextui-org/code";
 import { button as buttonStyles } from "@nextui-org/theme";
@@ -8,6 +8,7 @@ import { motion } from "framer-motion";
 import {
   DiscordIcon,
   GithubIcon,
+  M,
   NotificationIcon,
   TwitterIcon,
 } from "@/components/icons";
@@ -74,6 +75,12 @@ export default function Home() {
           </Link>
           , a sleek and responsive Hugo theme.
         </Chip> */}
+
+        <div>
+          <Link href="/">
+            <M />
+          </Link>
+        </div>
 
         <div className="inline-block  max-w-lg text-center justify-center ">
           {/* <h1 className={title()}>Musabbir&nbsp;</h1>

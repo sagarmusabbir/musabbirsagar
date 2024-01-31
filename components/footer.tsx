@@ -10,11 +10,11 @@ export const MainFooter = () => {
       >
         Ceo@{" "}
         <Image
-          src="/brackets.png"
+          src="/thirdbracket.svg"
           alt="thirdbracket.co.uk"
           className="dark:invert"
-          width={64}
-          height={64}
+          width={195}
+          height={25}
           priority
         />
       </a>

@@ -25,6 +25,7 @@ import {
   DiscordIcon,
   HeartFilledIcon,
   SearchIcon,
+  M,
 } from "@/components/icons";
 
 import { Logo } from "@/components/icons";
@@ -60,14 +61,8 @@ export const Navbar = () => {
     <NextUINavbar maxWidth="xl" position="sticky">
       <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
         <NavbarBrand as="li" className="gap-3 max-w-fit">
-          <Button
-            as={Link}
-            href="/"
-            radius="sm"
-            className="bg-transparent border-neon-slatedark   hover:bg-neon-slatedark  text-neon-slatedarker hover:text-white dark:text-white shadow-sm backdrop-blur-md border flex justify-start items-center gap-1"
-          >
-            {/* <GithubIcon size={20} /> */}
-            Musabbir
+          <Button as={Link} href="/" radius="sm" variant="shadow">
+            <M size={20} />
           </Button>
         </NavbarBrand>
         <ul className="hidden lg:flex gap-4 justify-start ml-2">
