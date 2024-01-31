@@ -60,11 +60,15 @@ export const Navbar = () => {
     <NextUINavbar maxWidth="xl" position="sticky">
       <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
         <NavbarBrand as="li" className="gap-3 max-w-fit">
-          <NextLink className="flex justify-start items-center gap-1" href="/">
-            <Button radius="md" variant="ghost" size="md">
-              MS
-            </Button>
-          </NextLink>
+          <Button
+            as={Link}
+            href="/"
+            radius="sm"
+            className="bg-transparent border-neon-slatedark   hover:bg-neon-slatedark  text-neon-slatedarker hover:text-white dark:text-white shadow-sm backdrop-blur-md border flex justify-start items-center gap-1"
+          >
+            {/* <GithubIcon size={20} /> */}
+            Musabbir
+          </Button>
         </NavbarBrand>
         <ul className="hidden lg:flex gap-4 justify-start ml-2">
           {siteConfig.navItems.map((item) => (
@@ -90,26 +94,25 @@ export const Navbar = () => {
       >
         <NavbarItem className="hidden sm:flex gap-2">
           <Link isExternal href={siteConfig.links.twitter} aria-label="Twitter">
-            <TwitterIcon className="text-default-500" />
+            <TwitterIcon className="text-slate-400 dark:text-slate-400" />
           </Link>
           <Link isExternal href={siteConfig.links.discord} aria-label="Discord">
-            <DiscordIcon className="text-default-500" />
+            <DiscordIcon className="text-slate-400 dark:text-slate-400" />
           </Link>
           <Link isExternal href={siteConfig.links.github} aria-label="Github">
-            <GithubIcon className="text-default-500" />
+            <GithubIcon className="text-slate-400 dark:text-slate-400" />
           </Link>
           <ThemeSwitch />
         </NavbarItem>
         <NavbarItem className="hidden lg:flex">{searchInput}</NavbarItem>
         <NavbarItem className="hidden md:flex">
           <Button
-            isExternal
             as={Link}
             href={siteConfig.links.upwork}
             showAnchorIcon
-            variant="flat"
-            color="success"
-            size="md"
+            isExternal
+            radius="sm"
+            className="bg-neon-slate  text-white shadow-sm backdrop-blur-md"
           >
             Work With Me
           </Button>

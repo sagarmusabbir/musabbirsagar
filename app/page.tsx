@@ -36,16 +36,16 @@ import { ThemeSwitch } from "@/components/theme-switch";
 
 export default function Home() {
   return (
-    <section className="flex flex-col items-center justify-center gap-6 lg:gap-24 py-8 mt-16 md:py-10 ">
+    <section className="flex flex-col items-center justify-center gap-6 lg:gap-24 py-8 my-16 md:py-10 ">
       <div className="flex flex-row justify-center gap-2 items-center">
         <Link isExternal href={siteConfig.links.twitter} aria-label="Twitter">
-          <TwitterIcon className="text-slate-400 dark:text-slate-500" />
+          <TwitterIcon className="text-slate-400 dark:text-slate-400" />
         </Link>
         <Link isExternal href={siteConfig.links.discord} aria-label="Discord">
-          <DiscordIcon className="text-slate-400 dark:text-slate-500" />
+          <DiscordIcon className="text-slate-400 dark:text-slate-400" />
         </Link>
         <Link isExternal href={siteConfig.links.github} aria-label="Github">
-          <GithubIcon className="text-slate-400 dark:text-slate-500" />
+          <GithubIcon className="text-slate-400 dark:text-slate-400" />
         </Link>
         <ThemeSwitch />
       </div>
@@ -84,7 +84,7 @@ export default function Home() {
           >
             Sagar&nbsp;
           </h1> */}
-          <h1 className="text-5xl font-bold text-slate-700 dark:text-slate-300">
+          <h1 className="text-5xl font-bold text-neon-slatedarker dark:text-slate-300">
             Musabbir&nbsp;Sagar
           </h1>
         </div>
@@ -94,7 +94,7 @@ export default function Home() {
             variant="flat"
             radius="sm"
             size="md"
-            className="shadow-md backdrop-blur-md bg-slate-200/30 dark:bg-slate-700/30"
+            className="shadow-md backdrop-blur-md bg-slate-200/30 dark:bg-slate-600/30"
           >
             {" "}
             Full Stack Developer
@@ -103,7 +103,7 @@ export default function Home() {
             variant="flat"
             radius="sm"
             size="md"
-            className="shadow-md backdrop-blur-md bg-slate-200/30 dark:bg-slate-700/30"
+            className="shadow-md backdrop-blur-md bg-slate-200/30 dark:bg-slate-600/30"
           >
             {" "}
             Enterproneuour
@@ -112,7 +112,7 @@ export default function Home() {
             variant="flat"
             radius="sm"
             size="md"
-            className="shadow-md backdrop-blur-md bg-slate-200/30 dark:bg-slate-700/30"
+            className="shadow-md backdrop-blur-md bg-slate-200/30 dark:bg-slate-600/30"
           >
             {" "}
             Digital Nomad
@@ -151,7 +151,7 @@ export default function Home() {
             showAnchorIcon
             isExternal
             radius="sm"
-            className="bg-transparent border border-slate-200 dark:border-slate-800 dark:hover:border-neon-slate hover:bg-neon-slate text-slate-700 hover:text-white dark:text-white shadow-lg backdrop-blur-md"
+            className="bg-transparent  hover:border-neon-slate hover:bg-neon-slate  text-neon-slatedarker hover:text-white dark:text-white shadow-sm backdrop-blur-md border"
           >
             <GithubIcon size={20} />
             GitHub
@@ -163,7 +163,7 @@ export default function Home() {
             showAnchorIcon
             isExternal
             radius="sm"
-            className="bg-gradient-to-tr from-neon-gray to-neon-slate text-white shadow-lg backdrop-blur-md"
+            className="bg-neon-slate  text-white shadow-sm backdrop-blur-md"
           >
             Work With Me
           </Button>
@@ -179,14 +179,14 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left text-slate-950 dark:text-white">
+      <div className="grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left text-neon-slatedarker dark:text-neon-slatelight">
         <a
-          href="https://blog.musabbirsagar.com/tag/articles/"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-slate-300 hover:bg-slate-100 hover:dark:border-slate-700 hover:dark:bg-slate-800/30"
+          href="https://blog.musabbirsagar.com/"
+          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-neon-slatelightmd hover:bg-neon-slatelight hover:dark:border-neon-slatedarker hover:dark:bg-neon-slatedarker/30"
           rel="noopener noreferrer"
         >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Articles{" "}
+          <h2 className={`mb-3 text-2xl font-semibold `}>
+            Blog{" "}
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
               -&gt;
             </span>
@@ -196,8 +196,8 @@ export default function Home() {
           </p>
         </a>
         <a
-          href="https://blog.musabbirsagar.com/tag/projects/"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-slate-300 hover:bg-slate-100 hover:dark:border-slate-700 hover:dark:bg-slate-800/30"
+          href="https://github.com/sagarmusabbir?tab=projects"
+          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-neon-slatelightmd hover:bg-neon-slatelight hover:dark:border-neon-slatedarker hover:dark:bg-neon-slatedarker/30"
           rel="noopener noreferrer"
         >
           <h2 className={`mb-3 text-2xl font-semibold`}>
@@ -212,8 +212,8 @@ export default function Home() {
         </a>
 
         <a
-          href="https://blog.musabbirsagar.com/about"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-slate-300 hover:bg-slate-100 hover:dark:border-slate-700 hover:dark:bg-slate-800/30"
+          href="/about"
+          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-neon-slatelightmd hover:bg-neon-slatelight hover:dark:border-neon-slatedarker hover:dark:bg-neon-slatedarker/30"
           rel="noopener noreferrer"
         >
           <h2 className={`mb-3 text-2xl font-semibold`}>
@@ -224,15 +224,15 @@ export default function Home() {
           </p>
         </a>
         <a
-          href="https://wa.me/881765692886"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-slate-300 hover:bg-slate-100 hover:dark:border-slate-700 hover:dark:bg-slate-800/30"
+          href="/contact"
+          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-neon-slatelightmd hover:bg-neon-slatelight hover:dark:border-neon-slatedarker hover:dark:bg-neon-slatedarker/30"
           rel="noopener noreferrer"
         >
           <h2 className={`mb-3 text-2xl font-semibold`}>
             Contact <span className="text-green-400"></span>-&gt;
           </h2>
           <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Contact me straightway
+            Explore my digital footprints.
           </p>
         </a>
       </div>
