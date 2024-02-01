@@ -8,15 +8,16 @@ export const MainFooter = () => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        Ceo@{" "}
+        ceo@{" "}
         <Image
-          src="/thirdbracket.svg"
+          src="/tbfooter.svg"
           alt="thirdbracket.co.uk"
-          className="dark:invert"
-          width={195}
-          height={25}
+          className="dark:invert-[.50]"
+          width={283}
+          height={64}
           priority
         />
+        .co.uk
       </a>
     </div>
   );
