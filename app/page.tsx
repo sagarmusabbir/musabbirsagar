@@ -91,8 +91,8 @@ export default function Home() {
           >
             Sagar&nbsp;
           </h1> */}
-          <h1 className="text-5xl font-bold text-neon-slatedarker dark:text-slate-300">
-            Musabbir&nbsp;Sagar
+          <h1 className="text-5xl text-wrap font-bold text-neon-slatedarker dark:text-slate-300">
+            Musabbir Sagar
           </h1>
         </div>
 
