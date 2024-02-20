@@ -27,6 +27,7 @@ module.exports = {
           slate: "#94a3b8",
           slatedark: "#64748b",
           slatedarker: "#1e293b",
+          slatedarkest: "#0f172a",
           zinc: "#a1a1aa",
           gray: "#9ca3af",
           orange: "#f97316",

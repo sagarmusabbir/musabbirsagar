@@ -49,5 +49,9 @@ export const siteConfig = {
     docs: "https://nextui.org",
     discord: "https://discord.gg/9b6yyZKmH4",
     upwork: "https://www.upwork.com/workwith/smamusabbirs",
+    facebook: "https://www.facebook.com/wwolverinee",
+    linkedin: "https://www.linkedin.com/in/musabbirsagar/",
+    mailto: "mailto:sagarmusabbir@gmail.com",
+    whatsapp: "https://wa.me/881765692886",
   },
 };
