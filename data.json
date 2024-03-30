@@ -1,0 +1,41 @@
+[
+  {
+    "Hit-label": "starter",
+    "Hit-price": 29,
+    "price": 29,
+    "name": "Starter",
+    "shortDescription": "Best option for personal use & for your next project.",
+
+    "url": "https://navigatethemarket-beta.vercel.app/#starter",
+    "type": "Package",
+
+    "categories": ["Services"],
+    "objectID": "01"
+  },
+  {
+    "Hit-label": "Company",
+    "Hit-price": 99,
+    "price": 99,
+    "name": "Company",
+    "shortDescription": "Relevant for multiple users, extended & premium support.",
+
+    "url": "https://navigatethemarket-beta.vercel.app/#company",
+    "type": "Package",
+
+    "categories": ["Services"],
+    "objectID": "02"
+  },
+  {
+    "Hit-label": "Enterprise",
+    "Hit-price": 499,
+    "price": 499,
+    "name": "Enterprise",
+    "shortDescription": "Best for large scale uses and extended redistribution rights.",
+
+    "url": "https://navigatethemarket-beta.vercel.app/#enterprise",
+    "type": "Package",
+
+    "categories": ["Services"],
+    "objectID": "03"
+  }
+]
